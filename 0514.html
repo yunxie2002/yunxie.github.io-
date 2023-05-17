@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="icon" href="html_img/1x/title_logo.png" type="png">
+    <link rel="shortcut icon" href="html_img/1x/title_logo.png" type="png">
+
+    <style>
+        .navbar .nav-link {
+            color: white !important;
+        }
+
+        .navbar {
+            background-color: transparent;
+            /* 初始狀態為透明 */
+            transition: background-color 0.5s ease-in-out;
+            /* 設定過渡效果，0.3秒漸入，且加速度緩慢 */
+        }
+
+        .navbar:hover {
+            background-color: #000000;
+            /* 鼠標移過去時底色漸入 */
+            opacity: 70%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav .nav-item:hover a {
+            border-bottom: 2px solid #333;
+        }
+
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+.pt-5, .py-5 {
+    padding-top: 3rem!important;
+}
+
+.enroll-bg-img{
+    background-image: url(html_img/1x/薑餅人.png);
+    background-position: center;
+    background-size: cover;
+    padding: 6em 20px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.btn-enroll {
+    line-height: 2em;
+    border-radius: 2em;
+    color: white;
+}
+
+.btn-pink {
+    color: white;
+    background-color: rgb(213,110,122);
+}
+
+.btn-dark {
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-wide {
+    width: 200px;
+}
+
+.btn {
+    border-radius: 0.5rem;
+}
+
+.rounded-pill {
+    border-radius: 50rem!important;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #969696;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+.table-tr {
+    width: 100%;
+    background-image: linear-gradient( to left, transparent, transparent 50%, rgb(60, 60, 60) 50%, rgb(60, 60, 60) );
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all 0.25s ease-in;
+    cursor: pointer;
+}
+
+.table-date {
+    color: rgb(150, 150, 150);
+    text-decoration: none;
+    font-size: 0.5em;
+    width: 4em;
+    line-height: 25px;
+}
+
+.mr-3, .mx-3 {
+    margin-right: 1rem!important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.logo {
+    width: 180px;
+}
+
+.footer-item {
+    text-align: center;
+    margin: 0 1em;
+    padding: 3px;
+    list-style-type: none;
+}
+
+.bg-footer {
+    padding: 1em;
+    background-color: #3c3c3c;
+}
+
+.bg-img {
+    background-image: url(/html_img/1x/工具間.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 16em 3em;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav id="header-nav"
+            class="navbar navbar:hover navbar-expand-lg navbar-dark nav-bg fixed-top align-items-start">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/0514.html" class="navbar-brand">
+                    <img src="html_img/logo_sample02.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--以下 navbar 項目 + section連接nav-item、下面內容 -->
+                <div id="navbarContent" class="collapse navbar-collapse show d-flex justify-content-end fixed-top p-3"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center nav-item:hover a">
+                        <li class="nav-item"><a class="nav-link" href="#section1">品牌理念</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section2">繪師介紹</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">繪師商店</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">近期活動</a></li>
+                        <li class="nav-item d-flex p-1 justify-content-center align-items-start">
+
+                            <a href="https://www.facebook.com/profile.php?id=100021987038538" target="_blank"
+                                class="out-link">
+                                <img src="html_img/1x/fb_logo02.png">
+                            </a>
+                            <a href="..." target="_blank" class="out-link">
+                                <img src="html_img/1x/prisonal_logo02.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- 可控制的輪播 -->
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="html_img/03.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="html_img/02.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="html_img/01.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- 品牌理念 -->
+        <div class="container text-center mt-5">
+            <h2 class="mb-4 mt-5">
+                <section id="section1">品牌理念</section>
+            </h2>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-6">
+                <div class="text-center">
+                    <p class="text-dark"><strong>一個樹莓系繪師的平台</strong></p>
+                    <p class="text-secondary">
+                        歡迎來到我們的樹莓系繪師平台，這裡匯集了最優秀的樹莓系繪師，他們以獨特的創意和卓越的技術，將每一幅作品都變成了一件獨一無二的藝術品。我們的理念是為了讓更多人欣賞和享受樹莓系繪的美，我們提供了一個簡單而強大的平台，讓繪師和用戶之間可以輕鬆交流和分享，從而讓更多人了解樹莓系繪的魅力和價值。我們致力於打造一個開放、創新和多元化的社區，讓每個人都能夠在這裡找到自己的位置，發揮自己的才能，並且為樹莓系繪的發展做出貢獻。無論你是繪師還是用戶，我們都歡迎你加入我們的平台，一起探索樹莓系繪的無限魅力！
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- 繪師介紹 -->
+        <!-- 通用選項 -->
+        <div class="box container">
+            <div class=" justify-content-center mt-5 border-0">
+                <div class="container text-center mt-5">
+                    <h2 class="mb-4 mt-5 p-5">
+                        <section id="section2">繪師介紹</section>
+                    </h2>
+                    </div>
+                <div class="row">
+
+                    <!-- 個別內容 card_1 -->
+                    <div class="col-4">
+                        <div class="p-2">
+                            <div class="card text-center shadow p-3 mb-5 bg-body rounded">
+                                <div class="card text-white mb-3" style="background-color: rgb(82, 98, 93);">
+                                <a href="index.html"><img class="card-img-top my-2" src="html_img/1x/oc.jpg"></a>
+                                <div class="card-header"><h5>謝弘運</h5></div>
+                                <div class="card-body">
+                                    <p class="card-text">擅長厚塗風格的繪師。作品充滿豐富的色彩和厚實的筆觸，展現出獨特的質感和層次感。透過他細膩的筆觸和獨特的運用，他能夠將畫面中的細節表現得生動而豐滿，帶給觀眾強烈的視覺衝擊和情感共鳴。</p>
+                                    <li class="nav-item d-flex p-1 justify-content-center align-items-start">
+
+                                        <a href="https://www.facebook.com/profile.php?id=100021987038538" target="_blank"
+                                            class="out-link">
+                                            <img src="html_img/1x/fb_logo02.png">
+                                        </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 個別內容 card_2 -->
+                    <div class="col-4">
+                        <div class="p-2">
+                            <div class="card text-center shadow p-3 mb-5 bg-body rounded">
+                                <div class="card text-white mb-3" style="background-color: rgb(55, 71, 85);">
+                                <a href="index.html"><img class="card-img-top my-2" src="html_img/1x/346806048_765487508350151_6162881535104754390_n.jpg"></a>
+                                <div class="card-header"><h5>劉得心</h5></div>
+                                <div class="card-body">
+                                    <p class="card-text">擅長線條和色彩運用的繪師。作品以精緻而流暢的線條描繪出細膩的細節，並運用色彩表現出豐富的情感和氛圍。他善於運用對比和色彩的變化，使畫面更加生動，並通過精準的線條表達出作品獨特的個性和風格。</p>
+                                    <li class="nav-item d-flex p-1 justify-content-center align-items-start">
+
+                                        <a href="https://www.facebook.com/profile.php?id=100014640589504" target="_blank"
+                                            class="out-link">
+                                            <img src="html_img/1x/fb_logo02.png">
+                                        </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 個別內容 card_3 -->
+                    <div class="col-4">
+                        <div class="p-2">
+                            <div class="card text-center shadow p-3 mb-5 bg-body rounded">
+                                <div class="card text-white mb-3" style="background-color: rgb(64, 65, 91);">
+                                <a href="https://fire0408.github.io/index2.html"><img class="card-img-top my-2" src="html_img/345633908_760576305600886_2094136022000983096_n - 複製.jpg"></a>
+                                <div class="card-header"><h5>小街</h5></div>
+                                <div class="card-body">
+                                    <p class="card-text">知名繪師，擁有眾多追蹤者。他以其出色的繪畫技巧和獨特的風格而聞名。他的作品充滿著豐富的細節和生動的表現力。他的繪畫才華吸引了眾多粉絲的追隨，並在網上繪圖社群中獲得了廣泛的讚譽。</p>
+                                    <li class="nav-item d-flex p-1 justify-content-center align-items-start">
+
+                                        <a href="https://www.facebook.com/jyunimatsu.matsuno" target="_blank"
+                                            class="out-link">
+                                            <img src="html_img/1x/fb_logo02.png">
+                                        </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<!-- 現在加入 -->
+        <div class="enroll-bg-img img-fluid">
+            <div class="text-center">
+                <p class="subtitle mb-5"><strong> &#x2600; 想要成為樹莓系的U質繪師嗎? &#x2600;</strong></p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center">
+                    <div class="m-2">
+                    <a href="#" class="btn enroll btn btn-pink btn-wide rounded-pill">現在加入我們吧</a>
+                </div>
+
+                <div class="m-2">
+                    <a href="#" class="btn enroll btn btn-dark btn-wide rounded-pill">再考慮看看 &#x1F622;</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 近期活動 -->
+    <div class="container p-4 my-3">
+        <div class="row">
+            <div class="col-md-3 p-3">
+                <h2><strong>NEWS</strong></h2>
+                    <h2>近期活動</h2>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between flex-wrap my-3">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link"><strong>合作聯名</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><strong>找委託</strong></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"><strong>促銷中</strong></a>
+                            </li>    
+                        </ul>
+                    </div>
+                
+
+                <table class="table ">
+                    <tbody>
+                        <tr class="table-tr">
+                            <td class="table-date">2023.5</td>
+                            <td class="d-flex justify-content-between">
+                                <span>▌ MANIUM!! 逃離程式疑雲  ▌ 視覺小說發行中 </span>
+                                <span class="table-allow mr-3"></span>
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-date">2023.5</td>
+                            <td class="d-flex justify-content-between">
+                                <span>▌ Raspberry Wonderland  ▌ 樹莓系繪師新血招生</span>
+                                <span class="table-allow mr-3"></span>
+                            </td>
+                        </tr>
+                        <tr class="table-tr">
+                            <td class="table-date">2023.5</td>
+                            <td class="d-flex justify-content-between">
+                                <span>▌ 爆肝樹莓人的熬夜大冒險  ▌ 人生遊戲刪檔公測</span>
+                                <span class="table-allow mr-3"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-img"></div>
+
+    <!-- 版尾 -->
+    <div>
+        <div class="bg-footer m-0">
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <a href="/0514.html" class="logo">
+                    <img src="html_img/logo_sample02.png" class="img-fluid">
+                </a>
+                <ul class="mb-0 p-0">
+                    <div class="d-flex flex-column flex-lg-row justify-content-end mt-3">
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">品牌理念</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">繪師介紹</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">繪師商店</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">近期活動</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">隱私權政策</a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
